@@ -1,0 +1,53 @@
+/* A quiet page that lets the CV be the focus. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fafafa;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cv-page {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: clamp(12px, 3vw, 32px);
+}
+
+/* Preserve the proportions in the supplied Canva code. */
+.cv-embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 141.4286%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cv-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-fallback {
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+a {
+  color: #244c73;
+  text-underline-offset: 4px;
+}
+
+a:focus-visible {
+  outline: 3px solid #244c73;
+  outline-offset: 5px;
+}
