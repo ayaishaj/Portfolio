@@ -4,7 +4,7 @@ These concepts describe files on your own computer unless explicitly stated othe
 
 | Term | Plain-English meaning |
 | --- | --- |
-| Website | A collection of webpages, often connected by links. This project currently has one implemented page. |
+| Website | A collection of webpages, often connected by links. This project currently has two implemented pages. |
 | Webpage | One page that you view in a browser. |
 | HTML | The language used to describe a webpage's content and structure. HTML5 is its modern form. |
 | CSS | Instructions controlling appearance, spacing, and fitting different screen sizes. |
@@ -32,9 +32,26 @@ These concepts describe files on your own computer unless explicitly stated othe
 You do not need to type these commands: `run-local.bat` runs them for you on your computer.
 
 - `cd /d "%~dp0"` switches to the folder containing the BAT file, including switching drives when needed. It changes the command window's working location, not your files.
-- `py -c "import http.server"` checks whether the Windows Python launcher can load Python's included server tool. If it works, the check is silent and changes no project files. The equivalent check using `python` runs only if the first check fails.
-- `py -m http.server 8000 --bind 127.0.0.1` starts Python's included local server on port 8000, restricted to your own computer. `python -m http.server 8000 --bind 127.0.0.1` does the same through the other Python command. Expect a server message followed by records of webpage requests.
-- `start` opens a separate server window, and later your default browser. It does not install software.
-- `timeout /t 3 /nobreak` waits about three seconds to give the server time to start. It does not change files.
+- `python -m http.server 8000` starts Python's included tool for delivering local webpage files on port 8000. Expect a server message followed by records of webpage requests. The current launcher uses this command in the same window; it changes no project files and installs nothing.
 
 The address http://localhost:8000/cv/ requests the `cv` folder's default page, `index.html`. That page asks for `css/main.css` to apply the appearance rules and asks Canva to display the supplied CV. An internet connection and Canva's availability are needed for that last part.
+
+## Concepts introduced with the web résumé
+
+| Term | Plain-English meaning |
+| --- | --- |
+| Webpage section | A meaningful part of a page, such as experience or education, with its own heading. |
+| Navigation | A group of links that helps you move around a website or page. |
+| Anchor link | A link to a named place on the same page; About moves directly to the About section. |
+| Responsive layout | The arrangement of content changes to fit the screen. Our two desktop columns become one column on smaller screens. |
+| CSS variable | A reusable named value, such as a color, controlled in one place. |
+| Media query | An appearance rule that applies only under a condition, such as a smaller screen width. |
+| Sticky positioning | An element stays visible as you scroll past other content. The résumé identity area uses this on desktop. |
+| Hover state | The appearance of a link or entry when your mouse pointer rests over it. |
+| Focus state | A visible indication of the link or control selected by the keyboard. |
+| Relative URL | An address written from the current page's location. From `/resume/`, `../cv/` goes up one folder and into the CV folder. |
+| Skip link | A keyboard-accessible link that lets you pass the introductory navigation and go straight to the main content. |
+
+The résumé opens at http://localhost:8000/resume/ and uses `css/resume.css`. Its links open in the same browser tab. Its appearance file has no effect on `/cv/`.
+
+The introductory profile and overall skills list can be updated independently of past job descriptions. Changing those lists does not rewrite the tools recorded under individual jobs or edit the Canva CV. Refresh your browser after saving a page change to see the latest wording.
