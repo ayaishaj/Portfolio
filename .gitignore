@@ -1,0 +1,18 @@
+# Local references and historical copies remain on this computer.
+/References/
+/backups/
+/tmp/
+/_site/
+/assets/*
+!/assets/portfolio/
+!/assets/cv/
+/assets/portfolio/SOURCE.json
+/css/home.css
+/css/homepage.css
+*.docx
+*.xlsx
+.env
+.env.*
+*.pem
+*.key
+__pycache__/

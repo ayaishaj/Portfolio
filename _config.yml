@@ -1,0 +1,18 @@
+# Reuse the existing GitHub Pages deployment from main / (root).
+# These development files are kept in GitHub when useful, but never served as pages.
+title: Ayaisha Jahan Sheikh
+url: https://ayaishaj.github.io
+baseurl: /Portfolio
+exclude:
+  - README.md
+  - AGENTS.md
+  - docs
+  - tools
+  - run-local.bat
+  - References
+  - backups
+  - tmp
+  - _site
+  - css/home.css
+  - css/homepage.css
+  - assets/portfolio/SOURCE.json
