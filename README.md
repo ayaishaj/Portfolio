@@ -7,7 +7,7 @@ One website brings together the homepage, complete creative portfolio, professio
 | `/` | Short landing page using the original cover design. |
 | `/portfolio/` | Complete vertical portfolio and interactive Portfolio Map. |
 | `/resume/` | Existing readable HTML Resume. |
-| `/cv/` | Public CV previews, PDF download, and online Resume link. |
+| `/cv/` | English and German two-page CV previews, PDF downloads, and online Resume link. |
 
 Publication target: https://ayaishaj.github.io/Portfolio/ . Deployment verification is recorded in docs/NEXT_STEPS.md.
 
@@ -28,21 +28,23 @@ HTML files hold page content. CSS files control appearance. JavaScript provides 
 - `resume/index.html` and `cv/index.html`: established route addresses.
 - `css/site.css` and `js/site.js`: shared navigation appearance and heading clearance.
 - `css/portfolio.css` and `js/portfolio.js`: existing vertical portfolio presentation and interactions.
-- `assets/portfolio/`: 26 optimized original visuals; `assets/cv/`: two previews of the public CV.
-- `downloads/Ayaisha-Jahan-Sheikh-CV.pdf`: the approved public English CV.
+- `assets/portfolio/`: 26 optimized original visuals; `assets/cv/`: four previews of the English and German CVs.
+- `downloads/Ayaisha-Jahan-Sheikh-CV.pdf`: updated public English CV; `downloads/Ayaisha-Jahan-Sheikh-Lebenslauf.pdf`: updated public German CV.
 - `tools/build_site.py`: checks internal links and prepares a public-only `_site` preview package.
 - `_config.yml`: tells the existing GitHub Pages publisher which development files to exclude.
 - `.gitignore`: keeps reference PDFs, backups, temporary files, unused originals, and common credential files off GitHub.
 
 GitHub Pages already publishes the `main` branch from the repository root. Keep that existing publishing source. Its automatic build uses `_config.yml`; it does not publish the local `_site` folder. No additional custom publishing workflow or account credentials are stored here.
 
-The public CV is a separate copy of the original English CV. Its home address, telephone, birth date, nationality and residence-permit/personal-information block were removed. Professional wording on both pages was verified unchanged. Ayaisha chose the public PDF instead of the Canva viewer. The original Canva HTML and fallback remain in an excluded local backup; the original PDFs remain unchanged. Existing historical GitHub commits may still contain the old Canva link; this update does not rewrite history or change Canva sharing settings.
+The current downloads are exact copies of Ayaisha's updated English and German PDFs supplied on 17 November 2026. Each has two A4 pages. All four pages were rendered and visually checked for alignment, spacing, clipping and overlap; no PDF formatting edits were needed. The supplied files have no photographs, telephone, home address, birth date or personal-status block. Professional wording, formatting and both local originals remain unchanged. Each language has an expandable preview generated from its own PDF. The previous English download and previews are preserved in excluded local backups.
+
+The current public CV page has no Canva embed or share link. Historical GitHub commits may still contain the retired Canva link; this task does not rewrite Git history or change Canva sharing settings.
 
 ## Update the website later
 
 1. Edit the relevant HTML file for wording, or its CSS file for appearance. Ask for help if unsure.
 2. Preview locally, check the four navigation links, Portfolio Map, images, and CV download.
-3. To replace the CV, use a public-safe PDF and update its two preview images together. Keep private originals outside published files.
+3. To replace the CV, use a public-safe English or German PDF and update that language’s two preview images together. Keep the published filenames stable so existing links continue to work. Keep private originals outside published files.
 4. In GitHub Desktop, review the changed files, write a short description, choose Commit to main, then Push origin. A commit records a version; pushing sends it to GitHub and updates the public website automatically.
 5. In the repository's Actions tab, wait for “pages build and deployment” to succeed. Refresh the live website.
 

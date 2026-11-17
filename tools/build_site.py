@@ -10,6 +10,7 @@ PAGES = ['index.html', 'portfolio/index.html', 'resume/index.html', 'cv/index.ht
 FILES = PAGES + [
     'css/portfolio.css', 'css/resume.css', 'css/main.css', 'css/site.css',
     'js/portfolio.js', 'js/site.js', 'downloads/Ayaisha-Jahan-Sheikh-CV.pdf',
+    'downloads/Ayaisha-Jahan-Sheikh-Lebenslauf.pdf',
 ]
 FILES += [str(p.relative_to(ROOT)).replace('\\', '/') for p in sorted((ROOT / 'assets/portfolio').glob('*.webp'))]
 FILES += [str(p.relative_to(ROOT)).replace('\\', '/') for p in sorted((ROOT / 'assets/cv').glob('*.webp'))]

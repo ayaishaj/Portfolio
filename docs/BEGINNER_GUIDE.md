@@ -1,3 +1,13 @@
+# English and German CV downloads — 17 November 2026
+
+The CV page now has separate English CV and Deutscher Lebenslauf download buttons. Each file is two pages. Click the English or German preview heading to open or close that language's two page previews; keyboard users can focus the heading with Tab and press Enter or Space. These expandable previews are standard HTML and do not need extra programming packages.
+
+Both updated PDFs were supplied by Ayaisha with personal details and photographs already removed. The website copies preserve the supplied text and formatting exactly; all four PDF pages were reviewed visually. The online Resume and the creative portfolio remain independent and unchanged by this CV update.
+
+For future edits, change the appropriate Word source, export a public-safe PDF, replace the matching file in downloads, and regenerate that language's two preview images in assets/cv. English keeps Ayaisha-Jahan-Sheikh-CV.pdf; German uses Ayaisha-Jahan-Sheikh-Lebenslauf.pdf. These stable filenames keep previously shared links working. Preview locally before committing and pushing to GitHub.
+
+Current publication verification is recorded in NEXT_STEPS.md. Older instructions follow as history.
+
 # Integrated website: beginner guide — 17 November 2026
 
 This section supersedes older instructions below about homepage scope, horizontal navigation, Canva publication, and local-only status.
@@ -110,6 +120,9 @@ A file check confirms saved content, source fingerprints and link destinations. 
 Local portfolio: http://localhost:8000/
 Resume: http://localhost:8000/resume/
 CV: http://localhost:8000/cv/
+Local site: http://localhost:8000/
+
+Current page: http://localhost:8000/cv/
 Local site: http://localhost:8000/
 
 Current page: http://localhost:8000/cv/

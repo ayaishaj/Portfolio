@@ -1,8 +1,20 @@
+# Bilingual CV decisions — 17 November 2026
+
+This CV update supersedes older instructions below describing a single redacted English PDF. The main website's earlier formatting cleanup was already present locally and is preserved; this task does not redesign the portfolio or Resume.
+
+1. Publish Ayaisha's supplied English and German public PDFs without rewriting their content or rebuilding their layouts. Both are already two-page A4 documents with personal details/photos removed, and visual review found no PDF formatting repairs necessary.
+2. Preserve the established English download URL and add a clearly named German download. Each preview must be generated from its corresponding PDF.
+3. Use native HTML expandable previews, with English initially open and German initially closed. Both downloads remain visible above the previews on every screen size. Preserve shared Home, Portfolio, Resume and CV navigation.
+4. Keep previous downloads/previews in ignored backups and leave both originals in the source folder unchanged. Do not reintroduce Canva or personal information.
+5. Include both PDFs in the public-file packaging/link check. Verify privacy, two-page count, source equality, mobile/tablet/desktop layout, download links and the live deployment.
+
+Older decisions follow as history.
+
 # Current integration decisions — 17 November 2026
 
 These decisions supersede earlier local-only, CV-only, and Canva-publication instructions for this explicitly authorized integration/publication task.
 
-1. Preserve the finished portfolio. Its entire main content is byte-for-byte identical after relative asset/route paths are rebased for `/portfolio/`. Keep the existing Resume content/design.
+1. Preserve the finished portfolio. Its professional wording, section order and layouts are unchanged; relative asset/route paths are rebased for `/portfolio/`, with whitespace tidied for publication. Keep the existing Resume content/design.
 2. Home is a short introduction reusing the original cover, with clear links to Portfolio, Resume and CV. Shared navigation is plain HTML and CSS, always visible without a mobile menu dependency.
 3. Use the existing repository and its established main/root GitHub Pages deployment. A custom Actions workflow is unnecessary. `_config.yml` excludes development files from the hosted site.
 4. Keep local reference PDFs, backups, unused original images, temporary work and extraction metadata off GitHub using `.gitignore`. Do not delete originals. Use a separate public-only package to check the runtime files.
@@ -138,6 +150,9 @@ CV: http://localhost:8000/cv/
 Local portfolio: http://localhost:8000/
 Resume: http://localhost:8000/resume/
 CV: http://localhost:8000/cv/
+Local site: http://localhost:8000/
+
+Current page: http://localhost:8000/cv/
 Local site: http://localhost:8000/
 
 Current page: http://localhost:8000/cv/

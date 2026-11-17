@@ -14,6 +14,12 @@ html { scroll-padding-top:calc(var(--header-height) + 24px); }
 .cv-intro { margin:12px 0 24px; line-height:1.6; }
 .cv-intro h1 { color:#234a86; font-size:clamp(28px,4vw,40px); margin:0 0 12px; }
 .cv-actions { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }
+.cv-language { margin:24px 0; border:1px solid #d9e2ee; border-radius:4px; background:#fff; }
+.cv-language summary { padding:18px 20px; color:#234a86; font:600 18px/1.5 Arial,sans-serif; cursor:pointer; overflow-wrap:anywhere; }
+.cv-language summary span { display:inline-block; margin-left:12px; color:#43536a; font-size:14px; font-weight:400; }
+.cv-language summary:hover { background:#edf2fa; }
+.cv-language summary:focus-visible { outline:3px solid #a75b00; outline-offset:3px; }
+.cv-preview-content { padding:0 clamp(8px,2vw,20px) 20px; }
 .public-cv-preview { display:grid; gap:24px; }
 .public-cv-preview figure { margin:0; }
 .public-cv-preview img { display:block; width:100%; height:auto; border:1px solid #d9e2ee; background:#fff; }

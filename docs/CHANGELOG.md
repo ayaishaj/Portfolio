@@ -1,3 +1,13 @@
+# 2026-11-17 — Updated bilingual CV downloads
+
+- Replaced the English download with Ayaisha's newly supplied public PDF and added the supplied German Lebenslauf.
+- Both PDFs remain exactly two A4 pages. Visually inspected all four pages; found no clipping or overlap requiring edits. The supplied PDF bytes, wording and formatting are unchanged.
+- Checked for photographs and the previously removed phone/address/birth-date/personal-status fields; none were found.
+- Refreshed the English page previews and added German page previews. Added labelled download buttons and expandable language previews using standard HTML.
+- Kept the existing English download address; added a stable German download address. Updated the public-file build check to include both PDFs.
+- Preserved the previous English website copy and previews in ignored local backups. Local source documents remain unchanged.
+- Synchronized the five required project notes. Browser, publishing and live-check results are recorded in NEXT_STEPS.md.
+
 # 2026-11-17 — Integration and publication preparation
 
 - Added a homepage using the existing cover and moved the intact 16-section portfolio to `/portfolio/`.
@@ -194,6 +204,9 @@ CV: http://localhost:8000/cv/
 Local portfolio: http://localhost:8000/
 Resume: http://localhost:8000/resume/
 CV: http://localhost:8000/cv/
+Local site: http://localhost:8000/
+
+Current page: http://localhost:8000/cv/
 Local site: http://localhost:8000/
 
 Current page: http://localhost:8000/cv/
